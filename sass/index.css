@@ -1,0 +1,94 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hd {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+#hd h1 img {
+  height: 3rem;
+}
+
+#gnb a:hover {
+  color: red;
+}
+#gnb > li:hover {
+  z-index: 100;
+}
+#gnb > li:hover > a {
+  color: red;
+}
+#gnb > li:hover ul {
+  border-top: 1px solid white;
+  height: 150px;
+}
+#gnb > li {
+  top: 100%;
+}
+#gnb > li > a {
+  text-decoration: none;
+  line-height: 80px;
+  padding: 0 2rem;
+}
+#gnb > li ul {
+  transition: 0.5s;
+  height: 0;
+  border: 1px solid #ccc;
+  border-top: 0px white;
+  line-height: 2rem;
+  padding: 0 2rem;
+  white-space: nowrap;
+  min-width: 150px;
+  transition: 0.5s;
+  overflow: hidden;
+  height: 0;
+  top: 100%;
+}
+#gnb > li ul a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justContentBetween {
+  justify-content: space-between;
+}
+
+.alignItemCenter {
+  align-items: center;
+}
+
+.dpNone {
+  display: none;
+}
+
+.dpFlex {
+  display: flex;
+}
+
+.posRelative {
+  position: relative;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.posFixed {
+  position: fixed;
+}
