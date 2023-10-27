@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KIMM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap');
+
+
+body {
+    font-family: 'Open Sans', 'KIMM', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+#hd {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+
+    h1 {
+        img {
+            height: 3rem;
+        }
+    }
+
+}
+
+#gnb {
+    a:hover {
+        color: red
+    }
+
+    >li {
+        >a {
+            line-height: 80px;
+            padding: 0 2rem;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            background-color: white;
+            border: 1px solid #ccc;
+            line-height: 2;
+            padding: 0 2rem;
+            white-space: nowrap;
+            min-width: 110px;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            top: 100%;
+            border-top: 0;
+
+        }
+    }
+
+    >li:hover {
+        z-index: 100;
+
+        >a {
+            color: red
+        }
+
+        ul {
+            height: 150px;
+        }
+    }
+}
